@@ -2,15 +2,45 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.asus.dem_lianxi_01.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal"
+        android:background="#ff3333"
+        >
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_icon"
+            android:src="@drawable/icon"
+            />
+        <TextView
+            android:layout_width="280dip"
+            android:layout_height="40dip"
+            android:id="@+id/tv"
+            android:text="今日头条"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="21sp"
+            />
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_more"
+            android:src="@drawable/more"
+            />
+    </LinearLayout>
 
-    <view.xlistview.XListView
+    <view.HorizontalScollTabhost
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/xlv_list"
-        ></view.xlistview.XListView>
+        android:id="@+id/tabhost"
+        ></view.HorizontalScollTabhost>
+
 
 </LinearLayout>

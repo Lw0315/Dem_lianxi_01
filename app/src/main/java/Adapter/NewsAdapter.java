@@ -1,4 +1,4 @@
-package com.example.asus.dem_lianxi_01;
+package Adapter;
 
 import android.content.Context;
 import android.view.View;
@@ -7,11 +7,12 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.asus.dem_lianxi_01.R;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
-import org.w3c.dom.Text;
-
 import java.util.List;
+
+import Bean.Bean;
 
 /**
  * Created by asus on 2017/8/29.
@@ -65,7 +66,7 @@ public class NewsAdapter extends BaseAdapter {
         if(view==null){
             switch (type){
                 case atype:
-                    view=View.inflate(context,R.layout.a_item,null);
+                    view=View.inflate(context, R.layout.a_item,null);
                     break;
                 case btype:
                     view=View.inflate(context,R.layout.b_item,null);
